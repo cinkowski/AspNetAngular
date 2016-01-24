@@ -15,6 +15,10 @@ namespace AspNetAngular
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
 
+            bundles.Add(new ScriptBundle("~/bundles/AspNetAngular")
+                .IncludeDirectory("~/Scripts/Controllers", "*.js")
+                .Include("~/Scripts/AspNetAngular.js"));
+
             BundleTable.EnableOptimizations = true;
         }
     }
